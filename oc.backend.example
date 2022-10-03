@@ -1,0 +1,4 @@
+bucket   = "oc"
+key      = "oc.state"
+region   = "<region>"
+endpoint = "https://<bucket namespace>.compat.objectstorage.<region>.oraclecloud.com"

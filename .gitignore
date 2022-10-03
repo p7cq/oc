@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+*.iml
+.terraform*
+kube.config
+*.pem
+*.key
+*.crt
+*.cer
+*id_rsa*
+*.conf
+*.config
+*.sh
+*.private.md
+oc.json
+oc.backend
+*.log

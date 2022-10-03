@@ -1,0 +1,25 @@
+{
+  "acme_email": "user@example.com",
+  "bastion": {
+      "allow_from_cidr_blocks": ["local environment external IP"],
+      "enabled": false,
+      "session_ttl": 10800,
+      "local_port": 6443,
+      "local_private_key_path": "~/.ssh/bastion SSH private.key"
+    },
+  "compartment_ocid": "ocid1.compartment.oc1..project.compartment",
+  "kubernetes": true,
+  "lan_cidr_block": "10.0.10.0/24",
+  "load_balancer_host": "nextcloud.example.com",
+  "name": "oc",
+  "vcn_cidr_block": "10.1.10.0/24",
+  "version": {
+    "cert_manager": "1.9.1",
+    "load_balancer": "4.2.5",
+    "mysql": "8.0.30",
+    "nextcloud": "24.0.5",
+    "kubernetes": "1.24.1",
+    "oracle_linux": "8.6",
+    "redis": "7.0.5"
+  }
+}

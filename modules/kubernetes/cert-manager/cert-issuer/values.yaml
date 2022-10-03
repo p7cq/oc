@@ -1,0 +1,22 @@
+replicaCount: 1
+nameOverride: ""
+fullnameOverride: ""
+podAnnotations: {}
+podSecurityContext: {}
+securityContext: {}
+resources: {}
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+nodeSelector: {}
+tolerations: []
+affinity: {}
+# Staging: https://acme-staging-v02.api.letsencrypt.org/directory
+acmeServer: "https://acme-v02.api.letsencrypt.org/directory"
+ingressClass: "nginx"
+privateKeySecretRef: "letsencrypt"
+# Set Values for cert-issuer dependency chart
+cert-manager:
+  installCRDs: true
